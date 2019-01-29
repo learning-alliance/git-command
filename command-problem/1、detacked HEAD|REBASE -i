@@ -1,0 +1,6 @@
+使用git rebase -i commit1 commitn后，出现HEAD游离的状态
+原因在于：
+  （1）只合并整个commit中的部分commit；
+ 解决：
+ 使用git rebase --abort 取消
+如果全部commit合并成一个commit 就不会出现上述问题；
